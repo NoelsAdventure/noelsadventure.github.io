@@ -29,12 +29,12 @@ const { title, body, colSpan, rowSpan, href, colorText, height } = Astro.props;
         <Icon
           class="h-6 float-right group-hover:text-primary-500 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform ease-in-out duration-100 z-20"           name="ri:arrow-right-up-line"
         />
-        <Content body={body} title={title}>
+        <Content body={body} title={title} colorText={colorText}>
           <slot />
         </Content>
       </a>
     ) : (
-      <Content body={body} title={title}>
+      <Content body={body} title={title} colorText={colorText}>
         <slot />
       </Content>
     )

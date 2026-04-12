@@ -31,109 +31,62 @@ import Card from "./Card/index.astro";
       >
         <!-- Slide 1 -->
         <div class="relative min-w-full snap-center bg-gray-800 shrink-0">
-          <img src="/images/Best Photos/1.webp" alt="Clownfish and its anemone" class="w-full h-full object-contain pointer-events-none" />
+          <img src="/images/Best Photos/1.webp" alt="Clownfish and its anemone" class="w-full h-full object-cover pointer-events-none" />
           <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-2 pt-5 text-white text-sm text-center">
             Clownfish and its anemone
           </div>
         </div>
         <!-- Slide 2 -->
         <div class="relative min-w-full snap-center bg-gray-800 shrink-0">
-          <img src="/images/Best Photos/2.webp" alt="Green turtle" class="w-full h-full object-contain pointer-events-none" />
+          <img src="/images/Best Photos/2.webp" alt="Green turtle" class="w-full h-full object-cover pointer-events-none" />
           <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-2 pt-5 text-white text-sm text-center">
             A not-so-'Green' sea turtle
           </div>
         </div>
         <!-- Slide 3 -->
         <div class="relative min-w-full snap-center bg-gray-800 shrink-0">
-          <img src="/images/Best Photos/3.webp" alt="Camouflaging lionfish" class="w-full h-full object-contain pointer-events-none" />
+          <img src="/images/Best Photos/3.webp" alt="Camouflaging lionfish" class="w-full h-full object-cover pointer-events-none" />
           <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-2 pt-5 text-white text-sm text-center">
             A camouflaging lionfish
           </div>
         </div>
         <!-- Slide 4 -->
         <div class="relative min-w-full snap-center bg-gray-800 shrink-0">
-          <img src="/images/Best Photos/4.webp" alt="My diving buddy" class="w-full h-full object-contain pointer-events-none" />
+          <img src="/images/Best Photos/4.webp" alt="My diving buddy" class="w-full h-full object-cover pointer-events-none" />
           <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-2 pt-5 text-white text-sm text-center">
             My diving buddy
           </div>
         </div>
         <!-- Slide 5 -->
         <div class="relative min-w-full snap-center bg-gray-800 shrink-0">
-          <img src="/images/Best Photos/5.webp" alt="Coral triangle" class="w-full h-full object-contain pointer-events-none" />
+          <img src="/images/Best Photos/5.webp" alt="Coral triangle" class="w-full h-full object-cover pointer-events-none" />
           <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-2 pt-5 text-white text-sm text-center">
             The vibrant coral triangle
           </div>
         </div>
         <!-- Slide 6 -->
         <div class="relative min-w-full snap-center bg-gray-800 shrink-0">
-          <img src="/images/Best Photos/6.jpeg" alt="Zion scenery" class="w-full h-full object-contain pointer-events-none" />
+          <img src="/images/Best Photos/6.jpeg" alt="Zion scenery" class="w-full h-full object-cover pointer-events-none" />
           <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-2 pt-5 text-white text-sm text-center">
             Zion scenery
           </div>
         </div>
         <!-- Slide 7 -->
         <div class="relative min-w-full snap-center bg-gray-800 shrink-0">
-          <img src="/images/Best Photos/7.jpeg" alt="Carlsbad cavern" class="w-full h-full object-contain pointer-events-none" />
+          <img src="/images/Best Photos/7.jpeg" alt="Carlsbad cavern" class="w-full h-full object-cover pointer-events-none" />
           <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-2 pt-5 text-white text-sm text-center">
             Carlsbad cavern
           </div>
         </div>
       </div>
-
-      <!-- Navigation Buttons (Now inside the group container) -->
-      <button 
-        id="prev-btn"
-        class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black/50 hover:bg-black/80 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-all pointer-events-none data-[visible=true]:pointer-events-auto data-[visible=false]:opacity-0 data-[visible=true]:group-hover:opacity-100"
-        aria-label="Previous photo"
-        data-visible="false"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-      </button>
-      
-      <button 
-        id="next-btn"
-        class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-black/50 hover:bg-black/80 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-all pointer-events-none data-[visible=true]:pointer-events-auto data-[visible=false]:opacity-0 data-[visible=true]:group-hover:opacity-100"
-        aria-label="Next photo"
-        data-visible="true"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-      </button>
     </div>
   </div>
 </Card>
 
-<script>
-  const slider = document.getElementById('photo-slider');
-  const nextBtn = document.getElementById('next-btn') as HTMLButtonElement;
-  const prevBtn = document.getElementById('prev-btn') as HTMLButtonElement;
-
-  const updateButtons = () => {
-    if (!slider || !nextBtn || !prevBtn) return;
-    
-    const { scrollLeft, scrollWidth, clientWidth } = slider;
-    
-    // Check if at the beginning (allow for 1px rounding error)
-    const isAtStart = scrollLeft <= 1;
-    // Check if at the end (allow for 1px rounding error)
-    const isAtEnd = scrollLeft + clientWidth >= scrollWidth - 1;
-
-    prevBtn.dataset.visible = (!isAtStart).toString();
-    nextBtn.dataset.visible = (!isAtEnd).toString();
-  };
-
-  nextBtn?.addEventListener('click', () => {
-    slider?.scrollBy({ left: slider.clientWidth, behavior: 'smooth' });
-  });
-
-  prevBtn?.addEventListener('click', () => {
-    slider?.scrollBy({ left: -slider.clientWidth, behavior: 'smooth' });
-  });
-
-  slider?.addEventListener('scroll', updateButtons);
-  
-  // Initial check
-  updateButtons();
-</script>
+<style>
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
 
 <style>
   .scrollbar-hide::-webkit-scrollbar { display: none; }
