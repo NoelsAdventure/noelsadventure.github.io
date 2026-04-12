@@ -23,7 +23,7 @@ import Card from "./Card/index.astro";
     </div>
 
     <!-- Photo Slider Section -->
-    <div class="relative w-full group flex-1 min-h-0">
+    <div class="relative w-full group flex-1 min-h-0 md:aspect-[4/3]">
       <!-- Slider Container -->
       <div 
         id="photo-slider"
@@ -80,10 +80,10 @@ import Card from "./Card/index.astro";
         </div>
       </div>
 
-      <!-- Navigation Buttons -->
+      <!-- Navigation Buttons (Hidden on mobile) -->
       <button 
         id="prev-btn"
-        class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black/50 hover:bg-black/80 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-all pointer-events-none data-[visible=true]:pointer-events-auto data-[visible=false]:opacity-0 data-[visible=true]:group-hover:opacity-100"
+        class="hidden md:block absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black/50 hover:bg-black/80 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-all pointer-events-none data-[visible=true]:pointer-events-auto data-[visible=false]:opacity-0 data-[visible=true]:group-hover:opacity-100"
         aria-label="Previous photo"
         data-visible="false"
       >
@@ -92,7 +92,7 @@ import Card from "./Card/index.astro";
       
       <button 
         id="next-btn"
-        class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-black/50 hover:bg-black/80 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-all pointer-events-none data-[visible=true]:pointer-events-auto data-[visible=false]:opacity-0 data-[visible=true]:group-hover:opacity-100"
+        class="hidden md:block absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-black/50 hover:bg-black/80 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-all pointer-events-none data-[visible=true]:pointer-events-auto data-[visible=false]:opacity-0 data-[visible=true]:group-hover:opacity-100"
         aria-label="Next photo"
         data-visible="true"
       >
