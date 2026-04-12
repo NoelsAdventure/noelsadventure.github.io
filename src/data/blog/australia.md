@@ -4,6 +4,7 @@ description: "this is a post example"
 pubDate: 2025-12-25
 category: "Travel"
 password: "noel"
+selected: true
 ---
 
 <div class="center-image">

@@ -4,6 +4,7 @@ description: "this is a post example"
 pubDate: 2025-12-25
 category: "nature"
 draft: false
+selected: true
 ---
 
 

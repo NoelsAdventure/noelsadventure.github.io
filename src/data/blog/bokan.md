@@ -5,6 +5,7 @@ permalink: /posts/2023/08/Bokan-Kepulauan/
 category: "nature"
 tags:
   - Diving
+selected: true
 ---
 
 <div class="center-image">
