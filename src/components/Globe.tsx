@@ -48,7 +48,7 @@ const GlobeComponent = () => {
     svg
       .append("circle")
       .attr("fill", "#f0f0f0")
-      .attr("stroke", "#ccc")
+      .attr("stroke", "#999")
       .attr("stroke-width", "0.5")
       .attr("cx", width / 2)
       .attr("cy", height / 2)
@@ -69,7 +69,7 @@ const GlobeComponent = () => {
       .attr("fill", (d: any) =>
         visitedCountries.includes(d.properties.name) ? "#E63946" : "white"
       )
-      .style("stroke", "#ccc")
+      .style("stroke", "#999")
       .style("stroke-width", 0.3)
       .style("opacity", 0.8)
       .style("transition", "fill 0.2s, opacity 0.2s")
