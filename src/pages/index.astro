@@ -67,17 +67,18 @@ const posts = (await getCollection("blog"))
       colSpan="md:col-span-1"
       rowSpan="md:row-span-3"
       title="Blog"
+      href="/blog"
     >
       <div class="flex flex-col gap-1 h-full">
         {posts?.slice(0, 8).map((post) => (
-          <a
-            href={`/blog/${post.id}`}
-            class="list-none w-full text-neutral-100 hover:text-neutral-400 ease-in-out transition-colors border-b-neutral-400 border-dashed border-b-1 my-0"
+          <div
+            role="link"
+            onclick={`event.preventDefault(); event.stopPropagation(); window.location.href='/blog/${post.id}'`}
+            class="list-none w-full text-neutral-100 hover:text-neutral-400 ease-in-out transition-colors border-b-neutral-400 border-dashed border-b-1 my-0 cursor-pointer"
           >
             <p class="inline-block whitespace-nowrap text-xs overflow-hidden text-ellipsis w-full">{post.data.title}</p>
-          </a>
+          </div>
         ))}
-        <a href="/blog" class="text-xs text-neutral-500 hover:text-neutral-300 mt-auto text-right w-full">See all blogs -></a>
       </div>
     </Card>
 
@@ -88,6 +89,7 @@ const posts = (await getCollection("blog"))
       colSpan="md:col-span-1"
       rowSpan="md:row-span-1"
       title="Countries I visited"
+      href="/travel"
     >
       <div class="h-full w-full absolute inset-0 z-10">
         <Globe client:load />

@@ -47,8 +47,8 @@ const GlobeComponent = () => {
 
     svg
       .append("circle")
-      .attr("fill", "#111")
-      .attr("stroke", "#444")
+      .attr("fill", "#f0f0f0")
+      .attr("stroke", "#ccc")
       .attr("stroke-width", "0.5")
       .attr("cx", width / 2)
       .attr("cy", height / 2)
@@ -67,9 +67,9 @@ const GlobeComponent = () => {
       .append("path")
       .attr("d", (d: any) => pathGenerator(d as any))
       .attr("fill", (d: any) =>
-        visitedCountries.includes(d.properties.name) ? "#E63946" : "#444"
+        visitedCountries.includes(d.properties.name) ? "#E63946" : "white"
       )
-      .style("stroke", "#222")
+      .style("stroke", "#ccc")
       .style("stroke-width", 0.3)
       .style("opacity", 0.8)
       .style("transition", "fill 0.2s, opacity 0.2s")
@@ -79,7 +79,7 @@ const GlobeComponent = () => {
         tooltip.textContent = d.properties.name;
         d3.select(event.currentTarget)
           .style("opacity", "1")
-          .style("fill", visitedCountries.includes(d.properties.name) ? "#FF4D5A" : "#666");
+          .style("fill", visitedCountries.includes(d.properties.name) ? "#FF4D5A" : "#e0e0e0");
       })
       .on("mousemove", (event: any) => {
         if (!tooltip) return;
@@ -95,15 +95,17 @@ const GlobeComponent = () => {
         tooltip.style.opacity = "0";
         d3.select(event.currentTarget)
           .style("opacity", "0.8")
-          .style("fill", visitedCountries.includes(d.properties.name) ? "#E63946" : "#444");
+          .style("fill", visitedCountries.includes(d.properties.name) ? "#E63946" : "white");
       });
 
     // Drag behavior
     const drag = d3.drag<SVGSVGElement, unknown>()
-      .on("start", () => {
+      .on("start", (event) => {
         isInteracting = true;
         svg.style("cursor", "grabbing");
         if (dragTimeout) clearTimeout(dragTimeout);
+        // Prevent event from bubbling to <a> tag during drag
+        if (event.sourceEvent) event.sourceEvent.stopPropagation();
       })
       .on("drag", (event) => {
         const rotate = projection.rotate();
@@ -113,16 +115,31 @@ const GlobeComponent = () => {
           rotate[1] - event.dy * k
         ]);
         svg.selectAll("path").attr("d", (d: any) => pathGenerator(d as any));
+        // Prevent event from bubbling to <a> tag during drag
+        if (event.sourceEvent) event.sourceEvent.stopPropagation();
       })
-      .on("end", () => {
+      .on("end", (event) => {
         svg.style("cursor", "grab");
         // Resume rotation after 3 seconds of inactivity
         dragTimeout = setTimeout(() => {
           isInteracting = false;
         }, 3000);
+        // Prevent event from bubbling if it was a real drag
+        if (event.sourceEvent && (Math.abs(event.x) > 2 || Math.abs(event.y) > 2)) {
+            event.sourceEvent.stopPropagation();
+        }
       });
 
     svg.call(drag as any);
+    
+    // Also stop propagation for other mouse events to be safe
+    svg.on("mousedown", (event) => event.stopPropagation());
+    svg.on("mouseup", (event) => {
+        // We let mouseup bubble UNLESS it was a drag, 
+        // but D3 drag end might have already handled it.
+        // Actually, for a simple click to work through the <a> tag, 
+        // we should probably NOT stop propagation on mouseup if it wasn't a drag.
+    });
 
     timer = d3.timer(() => {
       if (isInteracting) return;
