@@ -33,7 +33,7 @@ Sekotong is a hidden gem tucked away in the West Lombok Regency, an archipelago 
 With its smooth, white sandy beaches and thriving coral reefs, it’s a region bursting with marine potential.
 
 <div class="center-image">
-<img src="\images\Sekotong\A.jpeg" alt="Arriving at Gili Gede" width="80%" style="border-radius: 8px;" />
+<img src="\images\Sekotong\A.jpeg" alt="Arriving at Gili Gede" />
 </div>
 
 ### Arrival at Gili Gede
@@ -42,7 +42,7 @@ The highly anticipated moment finally arrived: our try-out day. Fresh off comple
 Upon arriving, we were greeted with a warm smile by Bu Elis, our host for the trip. We spent that first day sorting out official permits with the village chief and building up our camp craft to serve as our base of operations.
 
 <div class="center-image">
-<img src="\images\Sekotong\4.webp" alt="Diving Gili Layar" width="80%" style="border-radius: 8px;" />
+<img src="\images\Sekotong\4.webp" alt="Diving Gili Layar" />
 </div>
 
 ### Day 1: Steep Walls and Stubborn Cows at Gili Layar
@@ -51,26 +51,26 @@ When the time finally came to dive, we set our sights on the waters around **Gil
 *   **Sandy Slope:** A gentle, sandy incline. The visibility here was poor, but it was a treasure trove for spotting fascinating micro marine species.
 
 <div class="center-image">
-<img src="\images\Sekotong\3.webp" alt="Surface Interval" width="80%" style="border-radius: 8px;" />
+<img src="\images\Sekotong\3.webp" alt="Surface Interval" />
 </div>
 
 Between dives, we docked at Gili Layar for our surface interval and some lunch. The peace was briefly interrupted by a massive cow that decided to crash our break—luckily, Tio stepped up and managed to chase it away using a tree branch!
 
 <div class="center-image">
-<img src="\images\Sekotong\5.webp" alt="Rough seas at Gili Rengit" width="80%" style="border-radius: 8px;" />
+<img src="\images\Sekotong\5.webp" alt="Rough seas at Gili Rengit" />
 </div>
 
 ### Day 2: Battling the Elements at Gili Rengit
 On the second day, we moved our expedition to **Gili Rengit**. The morning brought dark, looming clouds over Lombok, leaving us anxious about whether we could safely dive. We collected our tanks and geared up. Eventually, the clouds cleared, but the wind continued to howl, whipping up high, choppy waves.
 
 <div class="center-image">
-<img src="\images\Sekotong\6.webp" alt="Spotting bubbles" width="80%" style="border-radius: 8px;" />
+<img src="\images\Sekotong\6.webp" alt="Spotting bubbles" />
 </div>
 
 While waiting for our diving buddies to surface, we typically monitored their bubbles, joking around and snacking on biscuits from Kak Ajis. But with the rough weather and turbulent water, the bubbles became incredibly difficult to track, and we frequently lost their direction in the waves.
 
 <div class="center-image">
-<img src="\images\Sekotong\7.webp" alt="Night at Bu Elis's" width="80%" style="border-radius: 8px;" />
+<img src="\images\Sekotong\7.webp" alt="Night at Bu Elis's" />
 </div>
 
 ### The Sobering Reality of Compressor Divers
@@ -79,7 +79,7 @@ That evening, we hung out with Bu Elis and the local men who frequented her plac
 We discovered that many locals work as "compressor divers." To harvest clams, they use heavy stones to sink themselves rapidly to the ocean floor, breathing through long plastic hoses, and are literally hauled back to the surface when they finish. Pak Ajis himself was a former compressor diver. It's a highly dangerous livelihood; many divers end up paralyzed or even lose their lives to severe decompression sickness.
 
 <div class="center-image">
-<img src="\images\Sekotong\8.webp" alt="Final dives" width="80%" style="border-radius: 8px;" />
+<img src="\images\Sekotong\8.webp" alt="Final dives" />
 </div>
 
 ### Day 3: Hiccups and Hidden Treasures
@@ -88,7 +88,7 @@ The final day brought a few logistical headaches. A delay in tank refilling mean
 Despite the chaotic start, these last two sites were arguably the most spectacular of the whole trip. We were surrounded by uniquely "dancing" fish, and on our very last descent, we came face-to-face with two different species of moray eels. 
 
 <div class="center-image">
-<img src="\images\Sekotong\9.webp" alt="Monkey Island" width="80%" style="border-radius: 8px;" />
+<img src="\images\Sekotong\9.webp" alt="Monkey Island" />
 </div>
 
 ### Under the Stars on Monkey Island
@@ -102,13 +102,13 @@ Once in Soekarno-Hatta, it was back to reality: a quick pitstop at a dive shop t
 
 ### Expedition Gallery
 <div class="three-gallery">
-  <img src="\images\Sekotong\2.jpg" alt="Sekotong Expedition 2" width="200" style="border-radius: 8px;" />
-  <img src="\images\Sekotong\3.webp" alt="Sekotong Expedition 3" width="200" style="border-radius: 8px;" />
-  <img src="\images\Sekotong\4.webp" alt="Sekotong Expedition 4" width="200" style="border-radius: 8px;" />
-  <img src="\images\Sekotong\5.webp" alt="Sekotong Expedition 5" width="200" style="border-radius: 8px;" />
-  <img src="\images\Sekotong\6.webp" alt="Sekotong Expedition 6" width="200" style="border-radius: 8px;" />
-  <img src="\images\Sekotong\7.webp" alt="Sekotong Expedition 7" width="200" style="border-radius: 8px;" />
-  <img src="\images\Sekotong\8.webp" alt="Sekotong Expedition 8" width="200" style="border-radius: 8px;" />
-  <img src="\images\Sekotong\9.webp" alt="Sekotong Expedition 9" width="200" style="border-radius: 8px;" />
-  <img src="\images\Sekotong\10.webp" alt="Sekotong Expedition 10" width="200" style="border-radius: 8px;" />
+  <img src="\images\Sekotong\2.jpg" alt="Sekotong Expedition 2" />
+  <img src="\images\Sekotong\3.webp" alt="Sekotong Expedition 3" />
+  <img src="\images\Sekotong\4.webp" alt="Sekotong Expedition 4" />
+  <img src="\images\Sekotong\5.webp" alt="Sekotong Expedition 5" />
+  <img src="\images\Sekotong\6.webp" alt="Sekotong Expedition 6" />
+  <img src="\images\Sekotong\7.webp" alt="Sekotong Expedition 7" />
+  <img src="\images\Sekotong\8.webp" alt="Sekotong Expedition 8" />
+  <img src="\images\Sekotong\9.webp" alt="Sekotong Expedition 9" />
+  <img src="\images\Sekotong\10.webp" alt="Sekotong Expedition 10" />
 </div>

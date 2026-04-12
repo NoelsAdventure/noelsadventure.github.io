@@ -114,6 +114,41 @@ const { Content, remarkPluginFrontmatter } = await render(entry);
   img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
+  }
+
+  .three-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+
+  .three-gallery img {
+    border-radius: 8px;
+    object-fit: cover;
+    width: calc(33.33% - 10px);
+    aspect-ratio: 1 / 1;
+  }
+
+  @media (max-width: 768px) {
+    .three-gallery img {
+      width: calc(50% - 10px);
+    }
+  }
+
+  .center-image {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+    width: 100%;
+  }
+
+  .center-image img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
   }
 
   table {

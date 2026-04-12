@@ -10,7 +10,7 @@ selected: true
 
 
 <div class="center-image">
-  <img src="/images/Zion/B.jpeg" alt="Buc-ee's and Texas stops" width="100%" style="border-radius: 8px;" />
+  <img src="/images/Zion/B.jpeg" alt="Buc-ee's and Texas stops" />
 </div>
 ## 3000 Miles on 6 days?? Letsgo!!
 
@@ -38,7 +38,7 @@ Another wishlist item checked: **Route 66**. We spent the night at a casino in G
 Finally, we arrived at **Zion National Park**. Our first hike was the Canyon Overlook. The views were incredible despite the misty weather.
 
 <div class="center-image">
-  <img src="/images/Zion/E.jpeg" alt="Zion National Park" width="100%" style="border-radius: 8px;" />
+  <img src="/images/Zion/E.jpeg" alt="Zion National Park" />
 </div>
 
 We set up our tent at the **Watchman Campground** and chased the sunset at the Watchman Trail. Our diet consisted mostly of hotdogs and macaroni and cheese (until Indira couldn't take it anymore!). At night, the sky was so clear we could see the stars with our naked eyes.
@@ -63,7 +63,7 @@ On the second day, we hiked The Narrows and headed toward Angel's Landing. We di
 We visited **Horseshoe Bend** (very crowded with a "mid" view) and then went "alien hunting" at the **Meteor Crater**. It was created thousands of years ago and is the best preserved meteor crater in the world. It is massive—literally the size of several football fields.
 
 <div class="center-image">
-  <img src="/images/Zion/10.jpeg" alt="Meteor Crater" width="100%" style="border-radius: 8px;" />
+  <img src="/images/Zion/10.jpeg" alt="Meteor Crater" />
 </div>
 
 ---
@@ -72,7 +72,7 @@ We visited **Horseshoe Bend** (very crowded with a "mid" view) and then went "al
 On the last day, we drove south to **Carlsbad Caverns**. It was absolutely mesmerizing. The temperature inside is a constant 12°C, and the stalactites and stalagmites are unbelievable.
 
 <div class="center-image">
-  <img src="/images/Zion/N.jpeg" alt="Carlsbad Caverns" width="100%" style="border-radius: 8px;" />
+  <img src="/images/Zion/N.jpeg" alt="Carlsbad Caverns" />
 </div>
 
 ---
@@ -91,5 +91,5 @@ On the last day, we drove south to **Carlsbad Caverns**. It was absolutely mesme
 </div>
 
 <div class="center-image">
-  <img src="/images/Zion/T.jpeg" alt="Buc-ee's and Texas stops" width="100%" style="border-radius: 8px;" />
+  <img src="/images/Zion/T.jpeg" alt="Buc-ee's and Texas stops" />
 </div>
