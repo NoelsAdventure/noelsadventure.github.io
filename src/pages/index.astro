@@ -88,9 +88,8 @@ const posts = (await getCollection("blog"))
       colSpan="md:col-span-1"
       rowSpan="md:row-span-1"
       title="Countries I visited"
-      href="travel"
     >
-      <div class="h-full w-full absolute inset-0 -z-10">
+      <div class="h-full w-full absolute inset-0 z-10">
         <Globe client:load />
       </div>
     </Card>
